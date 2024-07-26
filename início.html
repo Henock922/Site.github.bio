@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+</head>
+<body>
+  <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 90px;
+    width: 250px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    ;height: 100px;
+    width: 200px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    height: 24px;
+    border-radius: 21px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1e3a5f;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 1px 2px;
+    border: none;
+    cursor: pointer;
+    margin-left: 3px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon span {
+        font-size: 24px;
+    }
+}
+  
+  
+  
+  
+  
+   .main-content {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .book {
+      border: 1px solid #ddd;
+      padding: 20px;
+      margin-top: 2px;
+      margin: 6px;
+      width: 900px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      border: 1px solid #ddd;
+      max-height: 500px; /* Defina a altura máxima desejada */
+      overflow: hidden; /* Oculta o conteúdo que ultrapassa a altura */
+    }
+
+    .book:hover {
+      transform: scale(1.05);
+    }
+
+    .book img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .book h2 {
+      margin-bottom: 10px;
+      font-size: 1.3em;
+      color: #333;
+    }
+
+    .description {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #4CAF50;
+    }
+
+    .download-btn {
+      
+      background-color: black;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      width: 200px;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+      align-center: center;
+      justify-content: center;
+    }
+
+    .download-btn:hover {
+      background-color: #45a049;
+    }
+      .book img{
+          width: 300px;
+          
+            color: #00FF00;
+            font-weight: bold;
+            #background-color: black;
+            padding: 10px;
+          }
+       span{
+
+            color: white;
+            font-weight: bold;
+            #background-color: black;  
+</style>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="Imagens/logo2.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Início</a></li>
+                <li><a href="Livros.html">Artigos</a></li>
+                <li><a href="Cursos.html">Cursos</a></li>
+                <li><a href="Noticias.html">Noticias</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+        <a href="Inicio.html">Início</a>
+        <a href="Livros.html">Artigos</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="Noticias.html">Noticias</a>
+        <button class="btn"><a href="922729630"style="font-size: 120%">Entrar em contacto</a></button><br><br>
+      <p style="color: white; text-align: center">
+        CRIADO POR<br> ”ENOQUE CARLOS YT”
+      </p>
+    </aside>
+
+    <!-- Main Content -->
+
+   <main>
+       
+ <section class="main-content">
+      <div class="book">
+      <img src="imagens/programação.jpg" alt="Como dominar programação">
+      <h2>𝕋𝕖𝕔𝕟𝕠𝕝𝕠𝕘𝕚𝕒 𝕕𝕖 𝕚𝕟𝕗𝕠𝕣𝕞𝕒𝕔𝕒𝕠</h2>
+        <p class="description">No mundo inteiro, pessoas de diversas parte do mundo estão entrando no mundo de TECNOLOGIA DE INFORMAÇÃO.
+Porque isso?</p>
+      <a class="download-btn" href="#">Ler mais</a>
+    </div>
+      <div class="book">
+      <img src="facebook_hacking_account.png" alt="Facebook Hacking Account">
+      <h2>Facebook</h2>
+       <p class="description">Aprenda como as redes socias podem ser invadidas de forma simples e prática.</p>
+      <br>
+      <a class="download-btn" href="#">Ler mais</a>
+    </div>
+   
+    <!-- Adicione mais livros conforme necessário -->
+
+  </section>
+   </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="Imagens/logo2.jpg" alt="Logo">
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="imagens/tiktoklog.jpg" alt="tiktok"></a>
+                <a href="#"><img src="imagens/discadlog.jpg" alt="telefone"></a>
+                <a href="#"><img src="imagens/faceblog.jpg" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const menuIcon = document.getElementById('menu-icon');
+    const sidebar = document.getElementById('sidebar');
+    const closeBtn = document.getElementById('closebtn');
+
+    menuIcon.addEventListener('click', () => {
+        sidebar.style.width = '250px';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        sidebar.style.width = '0';
+    });
+
+    // Close the sidebar when clicking outside of it
+    document.addEventListener('click', (event) => {
+        if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+            sidebar.style.width = '0';
+        }
+    });
+});
+</script>
+</body>
+</html>
